@@ -1,0 +1,17 @@
+wolframalpha-4.0.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+wolframalpha-4.0.0.dist-info/LICENSE,sha256=2z8CRrH5J48VhFuZ_sR4uLUG63ZIeZNyL4xuJUKF-vg,1050
+wolframalpha-4.0.0.dist-info/METADATA,sha256=xiONdxyclOLHl_3UF8V_ObDGVySG5-wnf1jafVz7Ctc,3303
+wolframalpha-4.0.0.dist-info/RECORD,,
+wolframalpha-4.0.0.dist-info/WHEEL,sha256=Tl8xjW8X4F35KLnN1e6enZT4GHcvzGmqx_3941M0M6Q,93
+wolframalpha-4.0.0.dist-info/entry_points.txt,sha256=eQR_fDm0USQowfNbt2ScznGRr8qdRy9xDH7OM_7IYzg,55
+wolframalpha-4.0.0.dist-info/top_level.txt,sha256=7dbQwL-1nMZmW8OUN9HThEKalSoeOguNF_pl4fjLjNA,13
+wolframalpha/__init__.py,sha256=BZvRpoHNUeI5NJUVzWIAP8TObMCAalz9oS3rezCgXEE,5174
+wolframalpha/__pycache__/__init__.cpython-38.pyc,,
+wolframalpha/__pycache__/compat.cpython-38.pyc,,
+wolframalpha/__pycache__/pmxbot.cpython-38.pyc,,
+wolframalpha/__pycache__/test_client.cpython-38.pyc,,
+wolframalpha/__pycache__/test_pmxbot.cpython-38.pyc,,
+wolframalpha/compat.py,sha256=-_a7ctKtW5mJ-it_5BOexsLRuHLo2ir-E8MFX5Jw3i8,381
+wolframalpha/pmxbot.py,sha256=cbhm5ld6epR0IEglUEy0b7DVswV9WUqOhlZbyZeasvc,455
+wolframalpha/test_client.py,sha256=_qasCXESi3yz_pLG-1ZV9FP43jpa4Ct9IX4GOWiKryg,1527
+wolframalpha/test_pmxbot.py,sha256=_bmWUPyEQN9vw3aGV-zcUonLW_qqp4Xunu7XGJVnAdY,337
