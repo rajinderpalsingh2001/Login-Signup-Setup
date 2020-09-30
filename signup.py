@@ -1,9 +1,9 @@
 from tkinter import *
 from tkinter.messagebox import *
 from tkinter.ttk import *
-from pymysql import *
 import smtplib
 import random
+import sqlite3
 
 
 class signup:
@@ -13,9 +13,7 @@ class signup:
         if (str(self.txt5.get()).count("@")!=1  or str(self.txt5.get()).count(".")<1 or self.txt5.get().strip("")==""):
             showinfo("INVALID", "Not a Valid E-Mail")
         else:
-
             try:
-
                 self.otp=random.randint(1001,9999)
                 print(self.otp)
                 msg1="Thanks for Using My software\n"
@@ -24,17 +22,12 @@ class signup:
                 msg4="\nYour OTP is "
                 msg5=str(self.otp)
                 msg=msg1+msg2+msg3+msg4+msg5
-
-
-                user = 'downinnwh@gmail.com'
-                password = 'sairish12'
-
+                user = 'emailaddress'
+                password = 'emailpassword'
                 sender = self.txt5.get()
-
                 subject = "Verify Your E-Mail "
                 message = "Subject: {} \n\n{}".format(subject,msg)
                 send_to = ("{}".format(sender))
-
                 mail = smtplib.SMTP_SSL('smtp.gmail.com', 465)
                 mail.ehlo()
                 mail.login(user, password)
@@ -93,8 +86,7 @@ class signup:
         self.swp.grid(row=5, column=1)
 
     def add(self):
-
-        conn = connect("127.0.0.1", "root", "", "digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         s = "select username from info"
         cr = conn.cursor()
         cr.execute(s)
@@ -119,7 +111,7 @@ class signup:
                 self.txt2.config(state='enabled')
 
             else:
-                conn = connect("127.0.0.1", "root", "", "digitalsetup")
+                conn = sqlite3.connect("db.sqlite3")                
                 cr = conn.cursor()
                 q = "insert into info values('" + self.txt1.get() + "','" + self.txt2.get() + "','" + self.txt3.get() + "','" + self.gh.get() + "','" + self.cb1.get() + "','" + self.ans.get() + "','"+self.txt5.get()+"')"
 

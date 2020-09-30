@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="747d4057-e1ad-42b6-ad2c-920a0fd8d080" name="Default Changelist" comment="" />
+    <list default="true" id="747d4057-e1ad-42b6-ad2c-920a0fd8d080" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/digital.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/digital.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.py" beforeDir="false" afterPath="$PROJECT_DIR$/signup.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,16 +23,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XAPrE3HiEDYevvJKhXs1qv7lQv" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="1st" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -141,18 +157,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -167,62 +171,50 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="23" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580486519114">
+    <state x="337" y="101" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601464260502">
       <screen x="0" y="0" width="1140" height="601" />
     </state>
-    <state x="23" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1140.601@0.0.1140.601" timestamp="1580486519114" />
-    <state x="299" y="51" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582624861338">
+    <state x="337" y="101" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1140.601@0.0.1140.601" timestamp="1601464260502" />
+    <state x="149" y="14" key="DBNavigator.DatasetFilterDialog" timestamp="1601464367046">
       <screen x="0" y="0" width="1140" height="601" />
     </state>
-    <state x="299" y="51" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1140.601@0.0.1140.601" timestamp="1582624861338" />
-    <state x="92" y="92" width="955" height="416" key="DiffContextDialog" timestamp="1584780698412">
+    <state x="149" y="14" key="DBNavigator.DatasetFilterDialog/0.0.1140.601@0.0.1140.601" timestamp="1601464367046" />
+    <state x="99" y="0" key="DBNavigator.ProjectSettingsDialog" timestamp="1601463726491">
       <screen x="0" y="0" width="1140" height="601" />
     </state>
-    <state x="92" y="92" width="955" height="416" key="DiffContextDialog/0.0.1140.601@0.0.1140.601" timestamp="1584780698412" />
-    <state width="1118" height="139" key="GridCell.Tab.0.bottom" timestamp="1585499120603">
+    <state x="99" y="0" key="DBNavigator.ProjectSettingsDialog/0.0.1140.601@0.0.1140.601" timestamp="1601463726491" />
+    <state x="349" y="41" key="FileChooserDialogImpl" timestamp="1601463624166">
       <screen x="0" y="0" width="1140" height="601" />
     </state>
-    <state width="1118" height="139" key="GridCell.Tab.0.bottom/0.0.1140.601@0.0.1140.601" timestamp="1585499120603" />
-    <state width="1118" height="139" key="GridCell.Tab.0.center" timestamp="1585499120603">
+    <state x="349" y="41" key="FileChooserDialogImpl/0.0.1140.601@0.0.1140.601" timestamp="1601463624166" />
+    <state x="450" y="197" key="Github.ShareDialog" timestamp="1593158324664">
       <screen x="0" y="0" width="1140" height="601" />
     </state>
-    <state width="1118" height="139" key="GridCell.Tab.0.center/0.0.1140.601@0.0.1140.601" timestamp="1585499120603" />
-    <state width="1118" height="139" key="GridCell.Tab.0.left" timestamp="1585499120603">
+    <state x="450" y="197" key="Github.ShareDialog/0.0.1140.601@0.0.1140.601" timestamp="1593158324664" />
+    <state width="1096" height="139" key="GridCell.Tab.0.bottom" timestamp="1601466158542">
       <screen x="0" y="0" width="1140" height="601" />
     </state>
-    <state width="1118" height="139" key="GridCell.Tab.0.left/0.0.1140.601@0.0.1140.601" timestamp="1585499120603" />
-    <state width="1118" height="139" key="GridCell.Tab.0.right" timestamp="1585499120603">
+    <state width="1096" height="139" key="GridCell.Tab.0.bottom/0.0.1140.601@0.0.1140.601" timestamp="1601466158542" />
+    <state width="1096" height="139" key="GridCell.Tab.0.center" timestamp="1601466158542">
       <screen x="0" y="0" width="1140" height="601" />
     </state>
-    <state width="1118" height="139" key="GridCell.Tab.0.right/0.0.1140.601@0.0.1140.601" timestamp="1585499120603" />
-    <state width="1118" height="172" key="GridCell.Tab.1.bottom" timestamp="1584346668404">
+    <state width="1096" height="139" key="GridCell.Tab.0.center/0.0.1140.601@0.0.1140.601" timestamp="1601466158542" />
+    <state width="1096" height="139" key="GridCell.Tab.0.left" timestamp="1601466158541">
       <screen x="0" y="0" width="1140" height="601" />
     </state>
-    <state width="1118" height="172" key="GridCell.Tab.1.bottom/0.0.1140.601@0.0.1140.601" timestamp="1584346668404" />
-    <state width="1118" height="172" key="GridCell.Tab.1.center" timestamp="1584346668404">
+    <state width="1096" height="139" key="GridCell.Tab.0.left/0.0.1140.601@0.0.1140.601" timestamp="1601466158541" />
+    <state width="1096" height="139" key="GridCell.Tab.0.right" timestamp="1601466158542">
       <screen x="0" y="0" width="1140" height="601" />
     </state>
-    <state width="1118" height="172" key="GridCell.Tab.1.center/0.0.1140.601@0.0.1140.601" timestamp="1584346668404" />
-    <state width="1118" height="172" key="GridCell.Tab.1.left" timestamp="1584346668404">
+    <state width="1096" height="139" key="GridCell.Tab.0.right/0.0.1140.601@0.0.1140.601" timestamp="1601466158542" />
+    <state x="70" y="0" key="SettingsEditor" timestamp="1601463310213">
       <screen x="0" y="0" width="1140" height="601" />
     </state>
-    <state width="1118" height="172" key="GridCell.Tab.1.left/0.0.1140.601@0.0.1140.601" timestamp="1584346668404" />
-    <state width="1118" height="172" key="GridCell.Tab.1.right" timestamp="1584346668404">
+    <state x="70" y="0" key="SettingsEditor/0.0.1140.601@0.0.1140.601" timestamp="1601463310213" />
+    <state x="232" y="0" width="672" height="599" key="search.everywhere.popup" timestamp="1601464414646">
       <screen x="0" y="0" width="1140" height="601" />
     </state>
-    <state width="1118" height="172" key="GridCell.Tab.1.right/0.0.1140.601@0.0.1140.601" timestamp="1584346668404" />
-    <state x="80" y="0" key="SettingsEditor" timestamp="1582546914161">
-      <screen x="0" y="0" width="1140" height="601" />
-    </state>
-    <state x="80" y="0" key="SettingsEditor/0.0.1140.601@0.0.1140.601" timestamp="1582546914161" />
-    <state x="280" y="129" key="com.intellij.ide.util.TipDialog" timestamp="1585499158076">
-      <screen x="0" y="0" width="1140" height="601" />
-    </state>
-    <state x="280" y="129" key="com.intellij.ide.util.TipDialog/0.0.1140.601@0.0.1140.601" timestamp="1585499158076" />
-    <state x="232" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1581073530953">
-      <screen x="0" y="0" width="1140" height="601" />
-    </state>
-    <state x="232" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1140.601@0.0.1140.601" timestamp="1581073530953" />
+    <state x="232" y="0" width="672" height="599" key="search.everywhere.popup/0.0.1140.601@0.0.1140.601" timestamp="1601464414646" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -264,52 +256,52 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>70</line>
+          <line>69</line>
           <option name="timeStamp" value="65" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>71</line>
+          <line>70</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>72</line>
+          <line>71</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>73</line>
+          <line>72</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>95</line>
+          <line>94</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>97</line>
+          <line>96</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>96</line>
+          <line>95</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>312</line>
+          <line>311</line>
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>314</line>
+          <line>313</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>342</line>
+          <line>341</line>
           <option name="timeStamp" value="92" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -324,17 +316,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>416</line>
+          <line>415</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>417</line>
+          <line>416</line>
           <option name="timeStamp" value="96" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/login.py</url>
-          <line>418</line>
+          <line>417</line>
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

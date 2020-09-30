@@ -2,12 +2,11 @@ from tkinter import *
 from tkinter.messagebox import *
 from tkinter.ttk import *
 import smtplib
-from pymysql import *
+import sqlite3
 import random
 from signup import *
 import time as tm
 import datetime as dt
-
 
 class log:
 #change password
@@ -17,7 +16,7 @@ class log:
         elif(self.text.get()!=self.text2.get()):
             showerror("","Password Does'nt Match")
         else:
-            conn=connect("127.0.0.1","root","","digitalsetup")
+            conn = sqlite3.connect("db.sqlite3")
             cr=conn.cursor()
             a="update info set password='"+self.text.get()+"' where username='"+self.f+"'"
             cr.execute(a)
@@ -58,7 +57,7 @@ class log:
     def page(self):
         global result,l,txt,f
         self.f=self.txt1.get()
-        conn=connect("127.0.0.1","root","","digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         cr=conn.cursor()
         sh="select username from info"
         cr.execute(sh)
@@ -70,7 +69,7 @@ class log:
                 break
         if (flag==0):
             self.win=Tk()
-            conn=connect("127.0.0.1","root","","digitalsetup")
+            conn = sqlite3.connect("db.sqlite3")
             cr=conn.cursor()
             s="select securityques,securityans from info where username='"+self.f+"'"
             cr.execute(s)
@@ -100,7 +99,7 @@ class log:
         self.showpass.grid(row=3,column=1)
     def show(self):
         global h
-        conn=connect("127.0.0.1","root","","digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         cr=conn.cursor()
         q="select username,password from info"
         cr.execute(q)
@@ -132,7 +131,7 @@ class log:
     def editseqans(self):
         self.win4 = Tk()
         self.win4.title("Change Your Security Ans")
-        conn = connect("127.0.0.1", "root", "", "digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         cr = conn.cursor()
         quesdisplay = "select securityques from info where username='" + self.h + "'"
         cr.execute(quesdisplay)
@@ -169,7 +168,7 @@ class log:
     def editpass(self):
         self.win3 = Tk()
         self.win3.title("Change Password")
-        conn = connect("127.0.0.1", "root", "", "digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         cr = conn.cursor()
         passdisplay = "select password from info where username='" + self.h + "'"
         cr.execute(passdisplay)
@@ -208,7 +207,7 @@ class log:
     def editname(self):
         self.win2=Tk()
         self.win2.title("Change Your Name")
-        conn = connect("127.0.0.1", "root", "", "digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         cr = conn.cursor()
         namedisplay = "select name from info where username='"+self.h+"'"
         cr.execute(namedisplay)
@@ -247,7 +246,7 @@ class log:
         self.win5.title("My Information")
         self.f1=Frame(self.win5)
         self.win5.geometry("1500x50")
-        conn=connect("127.0.0.1","root","","digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         cr=conn.cursor()
         all="select * from info where username='"+self.h+"'"
         cr.execute(all)
@@ -290,7 +289,7 @@ class log:
         self.f1=Frame(self.win6)
         self.f2=Frame(self.win6)
 
-        conn=connect("127.0.0.1","root","","digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         cr=conn.cursor()
         s="select count(*) from logininfo where username='"+self.h+"'"
         cr.execute(s)
@@ -318,14 +317,14 @@ class log:
             self.a = timedis = tm.strftime('%I:%M:%S %p')
             now = dt.datetime.now()
             self.g = now.strftime("%d-%m-%Y")
-            conn = connect("127.0.0.1", "root", "", "digitalsetup")
+            conn = sqlite3.connect("db.sqlite3")
             cr=conn.cursor()
             ac="update friends set accepted='Yes' where myusername='"+ self.test['values'][1] +"'and friendusername='" + self.h + "'"
             cr.execute(ac)
             cr.close()
             conn.commit()
             self.win11.withdraw()
-            conn = connect("127.0.0.1", "root", "", "digitalsetup")
+            conn = sqlite3.connect("db.sqlite3")
             cr = conn.cursor()
             asss = "select count(*) from friends,info where friends.friendusername='" + self.h + "' and info.username=friends.myusername and accepted='No'"
             cr.execute(asss)
@@ -343,7 +342,7 @@ class log:
             showinfo("","Added")
 
         def decline():
-            conn = connect("127.0.0.1", "root", "", "digitalsetup")
+            conn = sqlite3.connect("db.sqlite3")
             cr = conn.cursor()
             ex = "delete from `friends` where myusername='" + self.test['values'][1] + "' and friendusername='" + self.h + "'"
             cr.execute(ex)
@@ -351,7 +350,7 @@ class log:
             cr.close()
             conn.commit()
             self.win11.withdraw()
-            conn = connect("127.0.0.1", "root", "", "digitalsetup")
+            conn = sqlite3.connect("db.sqlite3")
             cr = conn.cursor()
             asss = "select count(*) from friends,info where friends.friendusername='" + self.h + "' and info.username=friends.myusername and  accepted='No'"
             cr.execute(asss)
@@ -391,7 +390,7 @@ class log:
 
 
     def myrequests(self):
-        conn=connect("127.0.0.1","root","","digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         cr=conn.cursor()
         fd="select info.name,friends.myusername ,info.gender from friends,info where friends.friendusername='"+self.h+"' and info.username=friends.myusername and friends.accepted='No'"
         cr.execute(fd)
@@ -417,7 +416,7 @@ class log:
 
 
     def displaymyfriendlist(self):
-        conn=connect("127.0.0.1","root","","digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         cr=conn.cursor()
         ck="select friendusername from friends where accepted='Yes'"
         ckk = "select myusername from friends where accepted='Yes'"
@@ -471,7 +470,7 @@ class log:
 
 
     def delreq(self):
-        conn=connect("127.0.0.1","root","","digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         cr=conn.cursor()
         ex="delete from `friends` where friendusername='"+self.us+"' and myusername='"+self.h+"'"
         cr.execute(ex)
@@ -486,7 +485,7 @@ class log:
         self.now = dt.datetime.now()
         self.g = self.now.strftime("%d-%m-%Y")
         def sendreq():
-            conn=connect("127.0.0.1","root","","digitalsetup")
+            conn = sqlite3.connect("db.sqlite3")
             cr=conn.cursor()
             lk="select gender from info where username='"+usernameu+"'"
             cr.execute(lk)
@@ -509,7 +508,7 @@ class log:
             n = Label(addwin, text=self.item['values'][0]).grid(row=0, column=1)
             u1 = Label(addwin, text="Username").grid(row=1, column=0)
             u = Label(addwin, text=self.item['values'][1]).grid(row=1, column=1)
-            conn = connect("127.0.0.1", "root", "", "digitalsetup")
+            conn = sqlite3.connect("db.sqlite3")
             cr = conn.cursor()
             d = "select friendusername from friends where myusername='" + self.h + "'"
             cr.execute(d)
@@ -556,7 +555,8 @@ class log:
                 self.t2.insert("",index=i,values=r)
             self.t2.pack()
             self.t2.bind("<<TreeviewSelect>>", self.add)
-        conn=connect("127.0.0.1","root","","digitalsetup")
+
+        conn = sqlite3.connect("db.sqlite3")
         cr=conn.cursor()
         self.win7=Tk()
         self.f3=Frame(self.win7)
@@ -604,7 +604,7 @@ class log:
         self.lb3 = Label(self.f5, text="Date of Login")
         self.lb4 = Label(self.f5, text=self.g)
     #---displaying user's name
-        conn=connect("127.0.0.1","root","","digitalsetup")
+        conn = sqlite3.connect("db.sqlite3")
         cr=conn.cursor()
         username=self.h
         password=self.txt2.get()
